@@ -21,7 +21,7 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Build and test with Docker Compose
-        run: docker compose up --build -d
+        run: docker compose up --build -d --wait
       - name: Tag and push image
         run: |
           docker tag project1-ci-cd-app:latest ngemsdev/profil-app:latest
