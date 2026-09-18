@@ -1,7 +1,7 @@
 version: '3'
 services:
   my-app:
-    image: ngemsdev/profil-app:1.0.0
+    image: ngemsdev/profil-app:latest
     ports:
       - "3000:3000"
   mongodb:
